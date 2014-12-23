@@ -1,0 +1,35 @@
+body {
+	padding-top: 40px;
+}
+h1 {
+	color: white;
+	font-size: 300%;
+	text-align: center;
+	margin: 0 auto;
+	padding:10px;
+	background: black;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+h2 {
+	font-size: 200%;
+}
+p {
+	font-size: 100%;
+}
+p.center {
+	text-align: center;
+}
+p.right {
+	text-align: right;
+}
+p.justify{
+	text-align: justify;
+	text-justify: inter-word;
+}
+u {
+	text-decoration: none;
+	border-bottom: 5px solid black;
+}

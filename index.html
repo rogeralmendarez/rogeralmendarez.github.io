@@ -10,72 +10,58 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	font-size: 12pt;
+	font: 12px/12px sans-serif;
 }
 #wrapper {
 	min-height: 100%;
 	position: relative;
 }
 #header {
-	color: white; 
-	font-size: 125%; 
-	line-height: 10%; 
-	height: 10%; 
+	color: white;  
 	text-align: center; 
+	font-size: 125%;
+	line-height: 100%;
 	background: black; 
 	position: fixed; 
+	width: 100%;
 	top: 0;
-	left: 0; 
-	right: 0;
 }
-#section {
-	width: 30%;
-	margin: 10px;
-	font-size: 75%;
+#content {
+	width: 46%;
+	margin-left: 2%;
+	margin-right: 2%;
+	font-size: 100%;
 	hyphens: auto;
 	text-align: justify;
 	float: left;
+}
+#content h1 {
+	padding-bottom: 5px;
+	font-weight: normal;
 }
 #footer {
 	color: white; 
 	width: 100%;
 	font-size: 75%;
-	line-height: 10%;
+	line-height: 100%;
 	text-align: left; 
 	background: black; 
 	clear: both;
-	left: 0; 
-	right: 0;
 	bottom: 0;
 	position: fixed;
 }
-.firstlinequote {
-	font-size: 300%;
-	text-align: center; 
-	padding-top: 70px;
-	hyphens: auto;
-}
-.secondlinequote {
-	font-size: 300%;
-	text-align: center;
-	hyphens: auto;
-}
-
 .lovely {
 	float: left;
-	width: 33%;
-	height: 50%;
-}
-li {
 	width: 100%;
-	margin: 1%;
-	font-size: 75%;
-	hyphens: auto;
-	float: left;
+	height: auto;
+}
+ul {
+	list-style: inside;
 }
 u {
 	text-decoration: none;
-	border-bottom: 5px solid black;
+	border-bottom: 3px solid black;
+	display: inline;
 }
 @media only screen and (max-device-width: 480px) {
 	body {
@@ -89,64 +75,51 @@ u {
 		position: relative;
 	}
 	#header {
-		color: white; 
-		font-size: 125%; 
-		line-height: 5%; 
-		height: 5%; 
+		color: white;  
 		text-align: center; 
+		font-size: 125%;
+		line-height: 100%;
 		background: black; 
 		position: fixed; 
-		top: 0;
-		left: 0; 
-		right: 0;
-	}
-	#section {
 		width: 100%;
-		margin: 10px;
-		font-size: 75%;
+		top: 0;
+	}
+	#content {
+		width: 100%;
+		margin-left: 2%;
+		margin-right: 2%;
+		font-size: 100%;
 		hyphens: auto;
 		text-align: justify;
 		float: left;
+	}
+	#content h1 {
+		padding-bottom: 5px;
+		font-weight: normal;
 	}
 	#footer {
 		color: white; 
 		width: 100%;
 		font-size: 75%;
-		line-height: 10%;
+		line-height: 100%;
 		text-align: left; 
 		background: black; 
 		clear: both;
-		left: 0; 
-		right: 0;
 		bottom: 0;
 		position: fixed;
-	}
-	.firstlinequote {
-		font-size: 300%;
-		text-align: center; 
-		padding-top: 90px;
-		hyphens: auto;
-	}
-	.secondlinequote {
-		font-size: 300%;
-		text-align: center;
-		hyphens: auto;
 	}
 	.lovely {
 		float: left;
 		width: 100%;
 		height: auto;
 	}
-	li {
-		width: 100%;
-		margin: 1%;
-		font-size: 300%;
-		hyphens: auto;
-		float: left;
+	ul {
+		list-style: inside;
 	}
 	u {
 		text-decoration: none;
-		border-bottom: 5px solid black;
+		border-bottom: 3px solid black;
+		display: inline;
 	}
 }
 </style>
@@ -154,21 +127,33 @@ u {
 <div id="wrapper">
 	<div id="header" name="header" title="header">
 		<h1>Roger Almendarez</h1>
-		<br />
 	</div>
-	<div class="firstlinequote">Progress Is Slow, And That's OK</div>
-	<div class="secondlinequote">--As Long As It Keeps Moving Forward</div>
-	<br/>
-	<div id="section" name="Acadecsum" title="Academic Summary">
-		<h2 style="font-size: 125%"><u>Academic Summary</u></h2>
-		<p>I am currently working on my dissertation, <b>Liquid Borders: Latina/o Media Production in Chicago</b>. Adopting a comparative media studies approach, I also consider myself an interdisciplinary scholar for engaging ethnic, Latina/o, hip-hop, and cultural studies. My research interests include:</p>
-		<ul><li>Media Activism</li><li>The Transitions of New Media</li><li>The Production of Cultural Networks</li><li>Representations of Race and Ethnicity</li><li>Critical geography and its relationship to Media</li><li>Borderlands Studies of Media</li></ul>
-		<p>I have presented at the Society for Cinema and Media Studies on the Chicago Latino Film Festival and Univision Television. I received a BS from the University of Illinois at Urbana-Champaign in Psychology and Cinema Studies <i>(2007)</i> and an MA in Communication and Culture from Indiana University in Bloomington <i>(2009)</i>.</p>
+	<section>
+		<h1 style="padding-top: 50px; text-align: center; font-size: 300%;">Progress Is Slow, And That's OK</h1>
+		<h1 style="text-align: center; font-size: 300%;">--As Long As It Keeps Moving Forward</h1>
+	</section>
+	<div id="content" name="Acadecsum" title="Academic Summary">
+		<h1><u>Academic Summary</u></h1>
+		<p>I am currently working on my dissertation, <b>Liquid Borders: Latina/o Media Production in Chicago</b>. Adopting a comparative media studies approach, I also consider myself an interdisciplinary scholar for engaging ethnic, Latina/o, hip-hop, and cultural studies. My research interests include:
+		<ul class="list">
+			<li>Media Activism</li>
+			<li>The Transitions of New Media</li>
+			<li>The Production of Cultural Networks</li>
+			<li>Representations of Race and Ethnicity</li>
+			<li>Critical geography and its relationship to Media</li>
+			<li>Borderlands Studies of Media</li>
+		</ul>
+		I have presented at the Society for Cinema and Media Studies on the Chicago Latino Film Festival and Univision Television. I received a BS from the University of Illinois at Urbana-Champaign in Psychology and Cinema Studies <i>(2007)</i> and an MA in Communication and Culture from Indiana University in Bloomington <i>(2009)</i>.</p>
 	</div>
-	<div id="section" name="Devprog" title="Developer Progress">
-		<h2 style="font-size: 125%"><u>Developer Progress</u></h2>
-		<p>A few weeks ago, I decided to learn how to learn how to develop websites using programming languages. I'm teaching myself to do this, which is both fun and nebulous.</p>
-		<p>I am using this website as a test-site for my progress. It will change and get better as my skillset, and my mastery over it, increases. At the moment, here are the languages I'm actively using on this site:<UL><LI>HTML<LI>CSS</UL>We will see where this goes!</p> 
+	<div id="content" name="Devprog" title="Developer Progress">
+		<h1><u>Developer Progress</u></h1>
+		<p>A few weeks ago, I decided to begin developing websites, meaning learning a variety of different languages. I'm teaching myself to do this, which is both fun and nebulous.</p>
+		<p>I am using this website as a test-site for my progress. It will change and get better as my skillset, and my mastery over it, increases. At the moment, here are the languages I'm actively using on this site:
+		<ul class:"list">
+		<li>HTML</li>
+		<li>CSS</li>
+		</ul>
+		We will see where this goes!</p> 
 	</div>
 	<div>
 		<img class="lovely" src="https://scontent-b-sjc.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1510811_10104171374558760_1452059427395255675_n.jpg?oh=a975c00111e5c6ed178309f2b1dd994c&oe=55449398" style="left: 0px; right: 0px">

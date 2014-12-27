@@ -1,37 +1,140 @@
 body {
-	padding-top: 40px;
+	font: 16px/16px arial, sans-serif;
+	margin: 0;
+	padding: 0;
 }
-h1 {
-	color: white;
-	font-size: 300%;
-	text-align: center;
-	margin: 0 auto;
-	padding:10px;
-	background: black;
+/***IDs***/
+#footer {
+	background: black; 	
+	bottom: 0;
+	clear: both;
+	color: white; 	
+	font-size: 75%;
+	height: 3em;
+	left: 0;
+	padding-left: .5em;
 	position: fixed;
-	top: 0px;
-	left: 0px;
-	right: 0px;
+	text-align: left; 
+	text-shadow: 1px 0px 2px #999;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+	width: 100%;
 }
-h2 {
-	font-size: 200%;
-}
-p {
+#header {
+	background: black; 
+	color: white;  
 	font-size: 100%;
-	hyphens: auto;
+	position: fixed; 
+	text-align: left; 
+	text-shadow: 1px 1px 4px #999;
+	top: 0;
+	width: 100%;
+	z-index: 1;
 }
-p.center {
+#wrapper {
+	margin: 0 auto;
+	width: 100%;
+}
+/***Classes***/
+.content {
+	/*** Floating Tags with Shadows
+	
+	background: #FFFF00;
+	display: block;
+	font-size: 100%;	
+	height: auto;		
+	hyphens: auto;
+	line-height: 18px;
+	margin-bottom: .5em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: .25em;
+	text-align: left;
+	vertical-align: top;
+	-webkit-box-shadow: 10px 10px 6px -4px #777;
+		-moz-box-shadow: 10px 10px 6px -4px #777;
+			box-shadow: 10px 10px 6px -4px #777;
+	width: 90%; 
+	
+	***/
+	background-color: #e15915;
+	height: auto !important;
+	padding: .25em;
+	position: relative;	
+	width: 100% !important;
+
+}
+/***Triangle Transition Icon***/
+.content:after {
+    border-left: solid 20px transparent;
+    border-right: solid 20px transparent;
+    border-top: solid 20px #e15915;
+    content: "";
+    height: 0;
+    left: 70%;
+    margin-left: -25%;
+	position: absolute;
+    top: 98.1%;
+    width: 0;
+	z-index: 0;
+}
+.content h1 {
+	font-weight: normal;
+	line-height: 28px;
+	padding-bottom: 5px;
 	text-align: center;
 }
-p.right {
-	text-align: right;
+.list {
+	line-height: 15px;	
+	list-style-type: none;
+	margin: 0;
+	padding: .25em;
 }
-p.justify{
-	text-align: justify;
-	text-justify: inter-word;
+.nav {
+	display: inline;
+	float: right;
+	font-size: 125%;
+	font-weight: bold;
+	list-style-type: none;
+	margin-right: .5em;
+	text-align: right;
+	vertical-align: bottom;
+}
+.pic {
+	float: left;
+	height: auto;
+	-webkit-box-shadow: 10px 10px 6px -3px #777;
+	   -moz-box-shadow: 10px 10px 6px -3px #777;
+	        box-shadow: 10px 10px 6px -3px #777;
+	width: 100%;
+}
+.quote {
+	font-size: 300%; 
+	line-height: 40px;	
+	padding-top: 50px; 
+	text-align: center; 
+	text-shadow: 2px 2px 4px #999;
+}
+/***Body Styles***/
+a {
+	color: white;
+	text-decoration: none;
+
+}
+a:link {
+}
+a:visited {
+}
+a:hover {
+	color: pink;
+}
+a:active {
+	color: yellow;
+	font-weight: bold;
 }
 u {
+	border-bottom: 3px solid black;
+	display: inline;
 	text-decoration: none;
-	border-bottom: 5px solid black;
 }
-	<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
